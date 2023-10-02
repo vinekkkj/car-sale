@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebMotors</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <div class="container">
+    <div class="header">
+        <h1>WebMotors</h1>
+        <h3>Cadastre seu veículo aqui de forma gratuita!</h3>
+    </div>
+    <div class="form-container">
+        <div class="form-header">
+            <p>Formulário</p>
+        </div>
+        <div class="form-body">
+            <h1 class="form-title">
+                Venda seu carro aqui facilmente!
+            </h1>
+            <p>Descreva as características do seu carro abaixo.</p>
+          <form>
+            
+            
+            <div class="box-input">
+                <label for="title">Título do Anúncio<span class="required-field"> *</span>
+                </label>
+
+                <input type="text" name="title" id="title" class="block" placeholder="Título do Anúncio" minlength="1" maxlength="30" required
+                />
+            </div>
+            
+            
+            <div class="box-input">
+                <label for="price">Valor do Carro<span class="required-field"> *</span>
+                </label>
+
+                <input type="text" name="price" id="price" class="block" placeholder="Defina o preço" required
+                />  
+            </div>
+        
+        
+            <div class="box-input">
+            <label for="description">Descrição<span class="required-field"> *</span>
+            </label>
+            <textarea name="description" id="description" cols="30" rows="10" class="block" placeholder="Aqui você pode colocar detalhes sobre o carro (pintura, modificações, arranhões, etc)."></textarea>
+            </div>
+        
+        
+            <div class="box-input">
+            <label for="brand">Marca<span class="required-field"> *</span>
+            </label>
+            <input name="brand" id="brand" class="block" placeholder="Indique a marca do veículo"></input>
+        </div>
+        
+        
+        <div class="box-input">
+            <label for="model">Modelo<span class="required-field"> *</span>
+            </label>
+            <input name="model" id="model" class="block" placeholder="Indique o modelo do veículo"></input>
+        </div>
+        
+        
+        <div class="box-input">
+            <label for="mile">Kilometragem<span class="required-field"> *</span>
+            </label>
+            <input name="mile" id="mile" class="block" placeholder="Indique a KM do veículo"></input>
+        </div>
+        
+        
+        <div class="box-input">
+            <label for="purshase-date">Data de Compra<span class="required-field"> *</span>
+            </label>
+            <input type="date" name="date" id="date" class="block" ></input>
+        </div>
+        
+        
+        <div class="box-input">
+        <p>Tipo de câmbio: <span class="required-field"> *</span></p>
+            <input type="radio" id="manual" name="gear">
+            <label for="manual">Manual</label>
+            <input type="radio" id="auto" name="gear">
+            <label for="auto">Automático</label>
+        </div>
+        
+        
+        <div class="optional-box">
+            <p>Opcionais</p>
+                <ul class="optional-list">
+                    <li>
+                        <input type="checkbox" id="airbag" name="optional[]" value="airbag">
+                        <label for="airbag">AirBag</label>
+                    </li>
+                    
+                    <li>
+                        <input type="checkbox" id="alarm" name="optional[]" value="alarm">
+                        <label for="alarm">Alarme</label>
+                    </li>
+                    
+                    <li>
+                        <input type="checkbox" id="ac" name="optional[]" value="ac">
+                        <label for="ac">Ar-Condicionado</label>
+                    </li>
+                    
+                    <li>
+                        <input type="checkbox" id="reverse_camera" name="optional[]" value="">
+                        <label for="reverse_camera">Câmera de Ré</label>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <div class="optional-box">
+                    <ul class="optional-list">
+                        <li>
+                            <input type="checkbox" id="lane_assist" name="optional[]" value="lane_assist">
+                            <label for="lane_assist">Assistemte de Pista</label>
+                        </li>
+                        
+                        <li>
+                            <input type="checkbox" id="keyless" name="optional[]" value="keyless">
+                            <label for="keyless">Partida Keyless</label>
+                        </li>
+                        
+                        <li>
+                            <input type="checkbox" id="smartphone" name="optional[]" value="smartphone">
+                            <label for="smartphone">Integração com Celular</label>
+                        </li>
+                        
+                        <li>
+                            <input type="checkbox" id="leather_seat" name="optional[]" value="">
+                            <label for="leather_seat">Banco de Couro</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box-input">
+                    <p>Fotos do Carro<span class="required-field"> *</span></p>
+                    <input type="file" multiple accept="image/png, image/png" id="images" name="images" required>
+
+                </div>
+        <input type="submit" value="Enviar" class="btn-submit">
+    </form>
+    </div>
+   </div>
+</body>
+</html>
